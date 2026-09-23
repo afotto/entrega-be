@@ -9,4 +9,20 @@ export class ProductsController {
         
         return products;
     }
+
+    static async getProduct(productId) {
+
+        const product = await ProductsModel.getProduct(productId);
+        return product;
+    }
+
+    static async deleteProduct(productId){
+        const response = await ProductsModel.deleteProduct(productId);
+        return response;
+    }
+
+    static async postProduct(productData){
+        const response = await ProductsModel.postProduct(productData);
+        return response;
+    }
 }

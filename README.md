@@ -1,14 +1,21 @@
 # Entrega trabajo Andrés Ottonello
 
-## Installation
+## Installación
+npm install
 
 ## USO
+Obtener listado de PRODUCTOS: npm start GET products 
+Obtener PRODUCTO por ID: npm start GET products/Id
+
+
+## Diseño de arquitectura
+Realizado con el patron MVC
+Vista:      routes/products.js
+Controller: controller/products.js
+Modelo:     models/products.js
+
 Utilliza la API FakeStore: https://fakestoreapi.com/
 
-Obtener listado de PRODUCTOS: npm run start GET products 
-
-
-git remote add origin https://github.com/afotto/entrega-be.git
-git branch -M main 
-git push -u origin main
+## Repo
+https://github.com/afotto/entrega-be.git
 
