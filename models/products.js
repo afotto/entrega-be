@@ -20,7 +20,6 @@ export class ProductsModel {
     }
 
     static async postProduct(productData){
-        const response = await axios.post('https://fakestoreapi.com/products/', productData);
-        return response;
+        const response = await axios.post('https://fakestoreapi.com/products/', {...productData});        return response;
     }
 }

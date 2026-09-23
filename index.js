@@ -41,9 +41,10 @@ switch (args[0]) {
         const category = args[3];
 
         if (title && price && category){
-            const response = await ProductsRouter.post({ title, price, category });
+            const response = await ProductsRouter.post({ title:title,  category:category, price:price });
+            //console.log(response.data);
             if (response.status === 201) {
-                console.log(`Producto creado correctamente.`);
+                console.log(`Producto ID: ${response.data.id} creado correctamente.`);
             }
         } else {
             console.log('No se recibieron todos los parámetros requeridos para POST');
